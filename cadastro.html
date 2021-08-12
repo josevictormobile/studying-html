@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <script>
+     function show(){
+       
+       oculto = document.getElementById('campo_oculto');
+       oculto.removeAttribute("hidden");
+     }
+   </script>
+<body>
+  <div class="container">
+    <div class="title">Cadastro de Candidato</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome Completo</span>
+            <input type="text" placeholder="Escreva seu nome" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nome de Usuário</span>
+            <input type="text" placeholder="Seu nome de usuário" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Seu email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Número (tel/cel)</span>
+            <input type="tel" placeholder="Seu número de contato" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Data de Nascimento</span>
+            <input type="date" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Profissão</span>
+            <input onclick="show()" type="text" placeholder="Escolha sua Profissão" required>
+          </div>
+          <div class="input-box" hidden id="campo_oculto">
+            <span class="details">Profissão</span>
+            <input type="text" placeholder="Escolha sua Profissão" required>
+            <select class="input-box" name="" id="">
+              <option value="">teste</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="button is-fullwidth">
+          <input class="button is-fullwidth" type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
